@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html class="h-full antialiased" lang="<%= I18n.locale %>">
   <head>
-    <title>SubfolderRailsActivestorageBlobs</title>
+    <title>Subfolder Rails Activestorage Blobs</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= action_cable_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <% # All assets are defined in Webpacker app/javascripts now %>
+    <%= javascript_pack_tag "application", 'data-turbo-track': "reload", type: "module" %>
+    <%= stylesheet_pack_tag "application", media: "all", 'data-turbo-track': "reload" %>
+    <%= stylesheet_link_tag "application", media: "all", 'data-turbo-track': "reload" %>
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   </head>
 
-  <body>
+  <body class="h-full font-sans antialiased font-normal leading-normal">
     <%= yield %>
   </body>
 </html>
