@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe ActiveStorage::Blob do
-  let(:blob) { ActiveStorage::Blob.new }
+  let(:blob) { ActiveStorage::Blob.create_and_upload! io: StringIO.new("This is a test file"), filename: "test.txt" }
   let(:key) { blob.key }
 
   it "keys have no special prefix by default" do
