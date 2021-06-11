@@ -10,3 +10,10 @@ I've deployed two demonstration apps that show the internal key to demonstrate t
 * <https://subfolder-demo-2222.herokuapp.com/>
 
 [Read me on the blog post](https://dev.to/drnic/isolating-rails-blobs-in-subfolders-k08-temp-slug-4026714?preview=eb80c5fb6127886bf89a4ed50d7be5169d5f5a82c88ef480fd183f2411e496f93bed920d18c75b7d6934bcf4c1430a3a30ce49bae8f0da16fb6ebf40).
+
+## Files
+
+The configuration files for blobs in subfolders are:
+
+* [config/initializers/active_storage.rb](https://github.com/mocra/subfolder-rails-activestorage-blobs/blob/develop/config/initializers/active_storage.rb)
+* [spec/lib/activestorage_blob_spec.rb](https://github.com/mocra/subfolder-rails-activestorage-blobs/blob/develop/spec/lib/activestorage_blob_spec.rb)
