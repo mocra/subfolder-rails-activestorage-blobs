@@ -16,7 +16,7 @@
     <% @photos.each do |photo| %>
     <% if photo.image.attached? %>
     <li class="p-2 bg-indigo-50 rounded-lg shadow">
-      <%= image_tag photo.image, class: "rounded-sm", width: 300 %>
+      <%= image_tag photo.image, class: "rounded-sm", height: 300 %>
       <span class="text-xs px-1">blob key &mdash; <%= photo.image.key %></span>
     </li>
     <% end %>
