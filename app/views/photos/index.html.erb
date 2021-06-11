@@ -10,5 +10,15 @@
 
     </div>
     <p id="notice"><%= notice %></p>
+
   </div>
+  <ul class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <% @photos.each do |photo| %>
+    <% if photo.image.attached? %>
+    <li class="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
+      <%= image_tag photo.image.variant(resize_to_limit: [300, 300]) %>
+    </li>
+    <% end %>
+    <% end %>
+  </ul>
 </div>

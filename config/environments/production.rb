@@ -62,6 +62,9 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "subfolder_rails_activestorage_blobs_production"
 
+  # Store uploaded files on the local file system (see config/storage.yml for options).
+  config.active_storage.service = :amazon
+
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.

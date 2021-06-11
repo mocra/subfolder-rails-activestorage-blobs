@@ -62,3 +62,7 @@ end
 group :development, :test do
   gem "rspec-rails", "~> 5.0.0"
 end
+
+gem "aws-sdk-s3", require: false
+
+gem "image_processing"

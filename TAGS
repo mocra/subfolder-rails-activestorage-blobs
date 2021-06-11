@@ -1,0 +1,63 @@
+
+app/mailers/application_mailer.rb,67
+class ApplicationMailer < ActionMailer::BaseApplicationMailer1,0
+
+app/models/photo.rb,42
+class Photo < ApplicationRecordPhoto1,0
+
+app/models/application_record.rb,67
+class ApplicationRecord < ActiveRecord::BaseApplicationRecord1,0
+
+app/jobs/application_job.rb,58
+class ApplicationJob < ActiveJob::BaseApplicationJob1,0
+
+app/controllers/application_controller.rb,79
+class ApplicationController < ActionController::BaseApplicationController1,0
+
+app/controllers/photos_controller.rb,296
+class PhotosController < ApplicationControllerPhotosController1,0
+  def indexindex5,0
+  def showshow10,0
+  def newnew14,0
+  def editedit19,0
+  def createcreate23,0
+  def updateupdate38,0
+  def destroydestroy51,0
+  def set_photoset_photo62,0
+  def photo_paramsphoto_params67,0
+
+app/helpers/photos_helper.rb,37
+module PhotosHelperPhotosHelper1,0
+
+app/helpers/application_helper.rb,47
+module ApplicationHelperApplicationHelper1,0
+
+app/channels/application_cable/connection.rb,195
+module ApplicationCableApplicationCable1,0
+  class Connection < ActionCable::Connection::BaseConnection2,0
+  class Connection < ActionCable::Connection::BaseApplicationCable::Connection2,0
+
+app/channels/application_cable/channel.rb,177
+module ApplicationCableApplicationCable1,0
+  class Channel < ActionCable::Channel::BaseChannel2,0
+  class Channel < ActionCable::Channel::BaseApplicationCable::Channel2,0
+
+test/application_system_test_case.rb,95
+class ApplicationSystemTestCase < ActionDispatch::SystemTestCaseApplicationSystemTestCase3,0
+
+test/test_helper.rb,101
+class ActiveSupport::TestCaseTestCase5,0
+class ActiveSupport::TestCaseActiveSupport::TestCase5,0
+
+test/channels/application_cable/connection_test.rb,206
+class ApplicationCable::ConnectionTest < ActionCable::Connection::TestCaseConnectionTest3,0
+class ApplicationCable::ConnectionTest < ActionCable::Connection::TestCaseApplicationCable::ConnectionTest3,0
+
+config/application.rb,227
+module SubfolderRailsActivestorageBlobsSubfolderRailsActivestorageBlobs9,0
+  class Application < Rails::ApplicationApplication10,0
+  class Application < Rails::ApplicationSubfolderRailsActivestorageBlobs::Application10,0
+
+db/migrate/20210610220502_create_photos.rb,91
+class CreatePhotos < ActiveRecord::Migration[6.1]CreatePhotos1,0
+  def changechange2,0
