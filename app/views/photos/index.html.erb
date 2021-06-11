@@ -9,14 +9,14 @@
       <%= link_to 'New Photo', new_photo_path, class: "inline-flex items-center py-2 px-4 text-sm font-medium text-gray-700 bg-white rounded-md border border-gray-300 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" %>
 
     </div>
-    <p id="notice"><%= notice %></p>
 
   </div>
+  <p id="notice" class="flex mt-4 text-green-500"><%= notice %></p>
   <ul class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
     <% @photos.each do |photo| %>
     <% if photo.image.attached? %>
     <li class="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
-      <%= image_tag photo.image.variant(resize_to_limit: [300, 300]) %>
+      <%= image_tag photo.image, class: "rounded-sm", width: 300 %>
     </li>
     <% end %>
     <% end %>

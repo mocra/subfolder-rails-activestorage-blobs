@@ -1,5 +1,6 @@
 class Photo < ApplicationRecord
   validates :label, presence: true
+  validates :image, attached: true
 
   has_one_attached :image
 
