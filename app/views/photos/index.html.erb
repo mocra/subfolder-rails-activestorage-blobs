@@ -19,9 +19,11 @@
   <ul class="mt-4 space-y-6">
     <% @photos.each do |photo| %>
     <% if photo.image.attached? %>
-    <li class="p-2 bg-indigo-50 rounded-lg shadow">
-      <%= image_tag photo.image, class: "rounded-sm", height: 300 %>
-      <span class="text-xs px-1">blob key &mdash; <%= photo.image.key %></span>
+    <li class="card compact shadow-md">
+      <figure><%= image_tag photo.image, class: "rounded-sm", height: 300 %></figure>
+      <div class="card-body">
+        <span class="text-xs px-1">blob key &mdash; <%= photo.image.key %></span>
+      </div>
     </li>
     <% end %>
     <% end %>
